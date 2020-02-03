@@ -2,8 +2,6 @@ package com.tdevilleduc.urthehero.core.model;
 
 import lombok.*;
 
-import javax.validation.constraints.NotNull;
-
 @AllArgsConstructor
 @Getter
 @Setter
@@ -11,9 +9,9 @@ import javax.validation.constraints.NotNull;
 @EqualsAndHashCode
 public class DiceValue {
 
-    @NotNull
+    @NonNull
     private Integer value;
-    @NotNull
+    @NonNull
     private Dice dice;
 
 }

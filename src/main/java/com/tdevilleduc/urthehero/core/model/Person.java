@@ -1,6 +1,5 @@
 package com.tdevilleduc.urthehero.core.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -24,8 +23,7 @@ public class Person {
     private String displayName;
     @NonNull
     private String email;
-
-    @JsonIgnore
+    @NonNull
     private String password;
 
 }
