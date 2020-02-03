@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 public class HelloService {
 
     @ConfigProperty(name = "greeting")
-    private String greeting;
+    String greeting;
 
     public String politeHello(String name){
         return greeting + " " + name;

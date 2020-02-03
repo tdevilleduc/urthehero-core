@@ -14,7 +14,9 @@
       <lombok.version>1.18.10</lombok.version>
       <surefire-plugin.version>2.22.2</surefire-plugin.version>
       <jacoco.maven.plugin.version>0.8.5</jacoco.maven.plugin.version>
+      <modelmapper.version>2.3.6</modelmapper.version>
       <apache-commons-math3.version>3.6.1</apache-commons-math3.version>
+      <testcontainers.version>1.12.5</testcontainers.version>
 
       <sonar.exclusions>**/generated-sources, **/pom.xml</sonar.exclusions>
       <sonar.coverage.jacoco.xmlReportPaths>
@@ -46,9 +48,32 @@
               <artifactId>quarkus-spring-web</artifactId>
           </dependency>
           <dependency>
+              <groupId>io.quarkus</groupId>
+              <artifactId>quarkus-spring-data-jpa</artifactId>
+          </dependency>
+          <dependency>
+              <groupId>io.quarkus</groupId>
+              <artifactId>quarkus-hibernate-orm</artifactId>
+          </dependency>
+          <dependency>
+              <groupId>io.quarkus</groupId>
+              <artifactId>quarkus-jdbc-mysql</artifactId>
+          </dependency>
+          <dependency>
               <groupId>org.projectlombok</groupId>
               <artifactId>lombok</artifactId>
               <version>${lombok.version}</version>
+          </dependency>
+          <dependency>
+              <groupId>org.testcontainers</groupId>
+              <artifactId>mysql</artifactId>
+              <version>${testcontainers.version}</version>
+              <scope>test</scope>
+          </dependency>
+          <dependency>
+              <groupId>org.modelmapper</groupId>
+              <artifactId>modelmapper</artifactId>
+              <version>${modelmapper.version}</version>
           </dependency>
           <dependency>
               <groupId>org.apache.commons</groupId>
