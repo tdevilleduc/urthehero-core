@@ -1,12 +1,13 @@
 package com.tdevilleduc.urthehero.core.service;
 
+import com.tdevilleduc.urthehero.core.AbstractTest;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @QuarkusTest
-public class HelloServiceTest {
+public class HelloServiceTest extends AbstractTest {
 
     @Autowired
     HelloService helloService;

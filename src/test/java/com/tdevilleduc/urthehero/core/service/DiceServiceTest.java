@@ -1,5 +1,6 @@
 package com.tdevilleduc.urthehero.core.service;
 
+import com.tdevilleduc.urthehero.core.AbstractTest;
 import com.tdevilleduc.urthehero.core.model.Dice;
 import com.tdevilleduc.urthehero.core.model.DiceValue;
 import com.tdevilleduc.urthehero.core.service.impl.DiceService;
@@ -11,7 +12,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @QuarkusTest
-class DiceServiceTest {
+class DiceServiceTest extends AbstractTest {
 
     @Autowired
     DiceService diceService;
