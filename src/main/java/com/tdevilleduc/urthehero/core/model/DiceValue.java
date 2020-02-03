@@ -1,12 +1,13 @@
 package com.tdevilleduc.urthehero.core.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NonNull;
+import lombok.Setter;
 
 @AllArgsConstructor
 @Getter
 @Setter
-@ToString
-@EqualsAndHashCode
 public class DiceValue {
 
     @NonNull
