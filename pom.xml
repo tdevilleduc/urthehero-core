@@ -13,6 +13,14 @@
 
       <lombok.version>1.18.10</lombok.version>
       <surefire-plugin.version>2.22.2</surefire-plugin.version>
+      <jacoco.maven.plugin.version>0.8.5</jacoco.maven.plugin.version>
+
+      <sonar.exclusions>**/generated-sources, **/pom.xml</sonar.exclusions>
+      <sonar.coverage.jacoco.xmlReportPaths>
+          ${project.build.directory}/site/jacoco/jacoco.xml
+      </sonar.coverage.jacoco.xmlReportPaths>
+      <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
+      <sonar.language>java</sonar.language>
   </properties>
 
   <dependencyManagement>
@@ -70,6 +78,26 @@
                       <id>make-index</id>
                       <goals>
                           <goal>jandex</goal>
+                      </goals>
+                  </execution>
+              </executions>
+          </plugin>
+          <plugin>
+              <groupId>org.jacoco</groupId>
+              <artifactId>jacoco-maven-plugin</artifactId>
+              <version>${jacoco.maven.plugin.version}</version>
+              <executions>
+                  <execution>
+                      <id>default-prepare-agent</id>
+                      <goals>
+                          <goal>prepare-agent</goal>
+                      </goals>
+                  </execution>
+                  <execution>
+                      <id>report</id>
+                      <phase>prepare-package</phase>
+                      <goals>
+                          <goal>report</goal>
                       </goals>
                   </execution>
               </executions>
