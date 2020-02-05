@@ -5,3 +5,9 @@
 ```bash
 mvn clean install
 ```
+
+### Analyse Sonar
+
+```bash
+mvn clean install
+```
