@@ -11,7 +11,7 @@
       <quarkus.version>1.2.0.Final</quarkus.version>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-      <myMavenRepoReadUrl>myMavenRepoReadUrl</myMavenRepoReadUrl>
+      <myMavenRepoReadUrl>https://mymavenrepo.com/repo/4uyg2fZ6ssEfmKDhAAfG/</myMavenRepoReadUrl>
 
       <lombok.version>1.18.10</lombok.version>
       <surefire-plugin.version>2.22.2</surefire-plugin.version>
